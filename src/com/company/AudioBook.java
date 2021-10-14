@@ -1,21 +1,21 @@
 package com.company;
 
-public class Book implements LibraryItem
+public class AudioBook implements LibraryItem
 {
     private String title; // To hold title of the item
     private String category; // To hold title of the item
     private String author; // To hold title of the item
-    private Integer size;
+    private Integer size; // To hold title of the item
     private String type;
 
     //Constructor that accept name as parameter.
-    public Book(String title, String category, String author, Integer size )
+    public AudioBook(String title, String category, String author , Integer audioLength)
     {
         this.title = title;
         this.category = category;
         this.author = author;
-        this.size = size;
-        this.type = "Book";
+        this.size = audioLength;
+        this.type = "Audiobook";
     }
 
     // method required to implement the animal interface.
